@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Leap {
+public class Leap 
+{
     public static void main(String[] args)
     {
         System.out.println("Enter the year you want to check:-");

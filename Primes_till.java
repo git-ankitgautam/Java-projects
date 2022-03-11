@@ -8,7 +8,7 @@ public class Primes_till
         Scanner in = new Scanner(System.in);
         int lim = in.nextInt();
         System.out.println("Prime numbers till "+lim+ " are:-");
-        for(int i=2;i<=lim;i++)
+        for(int i=1;i<=lim;i++)
         {
             for(j=2;j<=i/2;j++)
             {
