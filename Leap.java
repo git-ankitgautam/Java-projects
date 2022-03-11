@@ -6,6 +6,7 @@ public class Leap
         System.out.println("Enter the year you want to check:-");
         Scanner in = new Scanner(System.in);
         int year = in.nextInt();
+        in.close();
         if(year %4 == 0)
         {
             if(year % 100 == 0 && year %400 != 0)

@@ -6,6 +6,7 @@ public class even_odd
         System.out.println("Enter the number you want to check:-");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
+        in.close();
         if(num % 2 ==0)
             System.out.println(num +" is an even number");
         else 

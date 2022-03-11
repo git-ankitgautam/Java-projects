@@ -9,6 +9,7 @@ public class Input
         a = input.nextInt();
         System.out.println("Enter the second number:-");
         b = input.nextInt();
+        input.close();
         c = a+b;
         System.out.println("Sum = " + c);
     }

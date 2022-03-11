@@ -7,6 +7,7 @@ public class Primes_till
         System.out.println("Enter the number till you want to find primes:-");
         Scanner in = new Scanner(System.in);
         int lim = in.nextInt();
+        in.close();
         System.out.println("Prime numbers till "+lim+ " are:-");
         for(int i=1;i<=lim;i++)
         {

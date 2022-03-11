@@ -7,6 +7,7 @@ public class even_odd_till
         System.out.println("Enter the number you want to go till:-");
         Scanner in = new Scanner(System.in);
         int lim = in.nextInt();
+        in.close();
         int[] even = new int[(lim/2)+1];
         for(int i=1;i<=lim;i++)
         {
@@ -32,6 +33,7 @@ public class even_odd_till
         odd[0] = index;
         System.out.println("\nThere are " + odd[0] + " Odd numbers till " + lim + ":-");
         printarr(odd,odd[0]);
+
     }   
 
     public static void printarr(int[] arr,int size)
