@@ -7,19 +7,18 @@ public class Bubble_sort
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number of element of array:-");
         int size = in.nextInt();
-        in.close();
         int[] array = new int[size];
         for(int i=0;i<size;i++)
         {
             array[i] = in.nextInt();
         }
+        in.close();
         
         for(int i=0;i<size;i++)
         {
             j=0;
             while(j < size -i-1)
             {
-                
                 if(array[j] > array[j+1])
                 {
                     temp = array[j];
