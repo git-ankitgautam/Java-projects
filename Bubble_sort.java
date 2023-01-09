@@ -1,39 +1,28 @@
 import java.util.Scanner;
-public class Bubble_sort 
-{
-    public static void main(String[] args)
-    {
-        int temp =0,j=1;
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number of element of array:-");
-        int size = in.nextInt();
-        int[] array = new int[size];
-        for(int i=0;i<size;i++)
+class Bubble_sort {
+    public static void main(String []args) {
+        int num, i, j, temp;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of integers to sort:");
+        num = input.nextInt();
+        int array[] = new int[num];
+        System.out.println("Enter " + num + " integers: ");
+        for (i = 0; i < num; i++)
+        array[i] = input.nextInt();
+        for (i = 0; i < ( num - 1 ); i++) 
         {
-            array[i] = in.nextInt();
-        }
-        in.close();
-        
-        for(int i=0;i<size;i++)
-        {
-            j=0;
-            while(j < size -i-1)
+            for (j = 0; j < num - i - 1; j++) 
             {
-                if(array[j] > array[j+1])
+                if (array[j] > array[j+1])
                 {
                     temp = array[j];
                     array[j] = array[j+1];
                     array[j+1] = temp;
                 }
-                j++;
             }
         }
-
-        System.out.println("sorted array:-");
-        for(int  i=0;i<size;i++)
-        {
-            System.out.print(array[i] + " ");
-        }
+        System.out.println("Sorted list of integers:");
+        for (i = 0; i < num; i++)
+        System.out.println(array[i]);
     }
-    
 }
